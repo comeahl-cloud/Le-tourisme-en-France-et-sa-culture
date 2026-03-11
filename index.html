@@ -10,28 +10,31 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 /* Layout */
 body {
   display: flex;
   min-height: 100vh;
+  background: #f0f4f8;
 }
 
+/* Sidebar */
 nav {
   width: 220px;
-  background: #002395;
+  background: #1b3b6f;
   color: white;
-  flex-shrink: 0;
   position: fixed;
   height: 100%;
-  padding-top: 20px;
+  padding-top: 30px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
 }
 
 nav h2 {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 24px;
 }
 
 nav a {
@@ -39,31 +42,40 @@ nav a {
   color: white;
   text-decoration: none;
   padding: 12px 20px;
-  margin: 5px 0;
-  border-radius: 5px;
+  margin: 5px 10px;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  background: #ED2939;
+  background: #ff4b3e;
+  color: white;
 }
 
+/* Main content */
 main {
   margin-left: 220px;
   padding: 30px;
   flex-grow: 1;
-  background: #f4f4f4;
 }
 
-/* Sections */
+/* Section styles */
 section {
   background: white;
   margin-bottom: 40px;
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
 h2 {
-  color: #002395;
+  color: #1b3b6f;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #ff4b3e;
+  margin-top: 20px;
 }
 
 img {
@@ -73,6 +85,11 @@ img {
   margin-top: 15px;
 }
 
+ul {
+  line-height: 1.8;
+}
+
+/* Théo section */
 .photo-theo{
   width: 400px;
   height: 300px;
@@ -82,15 +99,16 @@ img {
   justify-content: center;
   color: #999;
   font-size: 18px;
+  margin-top: 15px;
 }
 
+/* Footer */
 footer {
-  background: #222;
+  background: #1b3b6f;
   color: white;
   text-align: center;
   padding: 20px;
-  border-radius: 10px;
-  margin-top: 20px;
+  border-radius: 12px;
 }
 </style>
 </head>
@@ -109,16 +127,20 @@ footer {
 <main>
 <section id="culture">
 <h2>Culture française</h2>
-<p>La France possède une culture très riche influencée par l'histoire, l'art, la littérature et la philosophie.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Louvre_Museum_Wikimedia_Commons.jpg" alt="Louvre">
+<p>La France possède une culture riche influencée par l'histoire, l'art, la littérature et la philosophie. Elle est connue pour ses musées, ses monuments et ses festivals.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Louvre_Museum_Wikimedia_Commons.jpg/640px-Louvre_Museum_Wikimedia_Commons.jpg" alt="Louvre">
 </section>
 
 <section id="monuments">
 <h2>Monuments célèbres</h2>
+
 <h3>Tour Eiffel</h3>
 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg" alt="Tour Eiffel">
+<p>La Tour Eiffel est le symbole emblématique de Paris et attire des millions de visiteurs chaque année.</p>
+
 <h3>Mont-Saint-Michel</h3>
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Mont-Saint-Michel_vu_du_ciel.jpg" alt="Mont-Saint-Michel">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Mont_St_Michel_from_the_air.jpg/640px-Mont_St_Michel_from_the_air.jpg" alt="Mont-Saint-Michel">
+<p>Le Mont-Saint-Michel est une île située en Normandie, classée au patrimoine mondial de l’UNESCO.</p>
 </section>
 
 <section id="villes">
@@ -135,16 +157,20 @@ footer {
 
 <section id="gastronomie">
 <h2>Gastronomie française</h2>
-<p>La cuisine française est célèbre dans le monde entier.</p>
+<p>La cuisine française est réputée dans le monde entier.</p>
+<h3>Plats célèbres</h3>
 <ul>
 <li>Ratatouille</li>
 <li>Boeuf bourguignon</li>
 <li>Quiche lorraine</li>
 <li>Crêpes</li>
+</ul>
+<h3>Pâtisseries et spécialités</h3>
+<ul>
 <li>Croissant</li>
 <li>Baguette</li>
-<li>Fromages</li>
 <li>Macarons</li>
+<li>Fromages</li>
 </ul>
 </section>
 
